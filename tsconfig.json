@@ -25,5 +25,5 @@
   "include": [
     "src"
   ],
-  "exclude": ["src/**/*.js", "src/**/*.jsx", "src/**/*.tsx"]
+  "exclude": ["src/**/*.js", "src/**/*.jsx"]
 }

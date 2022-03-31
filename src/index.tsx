@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 import * as dummy_measurements from './dummy_measurements.json';
 import { FeetScanPlaceholder } from './components/FeetScanPlaceholder';
 import './index.css';
-import { Measurenes } from './components/measurenes';
+import { Measurenes } from './components/Measurenes';
 
 const styles = {
   container: css`
@@ -24,8 +24,9 @@ const styles = {
   `,
 };
 
-const ScanPage: React.FC = () => (
-  <div
+const ScanPage: React.FC = () => {
+
+  return (<div
     className={ styles.container }
   >
     <div
@@ -40,12 +41,12 @@ const ScanPage: React.FC = () => (
           z: 0.2,
         }}
       />
-    <Measurenes
-        measurements={ dummy_measurements.data }
-    />
+      <Measurenes
+          measurements={ dummy_measurements }
+      />
     </div>
-  </div>
-);
+  </div>)
+};
 
 ReactDOM.render(
   <ScanPage/>,
